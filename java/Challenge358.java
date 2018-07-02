@@ -61,9 +61,8 @@ public class Challenge358 {
      * 
      * @param line
      * @param map
-     * @param transitive 
      */
-    public static void parseLine(String line, HashMap<String, HashMap<String, HashSet<String>>> map, HashSet<String>transitive) {
+    public static void parseLine(String line, HashMap<String, HashMap<String, HashSet<String>>> map) {
         //2017-11-15  E Texas Bap              89 @Centenary                81           
         line = line.trim().replaceAll("\\s+", " ").replaceAll("@",""); //replace all spaces with a single space
         String[] split = line.split(" ");
@@ -136,7 +135,7 @@ public class Challenge358 {
         transitive.add(champion);
         
         for(String s: list) {
-            parseLine(s, map, transitive);
+            parseLine(s, map);
             //should think about parsing data here to save time
         }
         
