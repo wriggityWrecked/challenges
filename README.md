@@ -1,2 +1,4 @@
 # challenges
-My attempts at the reddit daily programmer challenges (when I can find time)
+
+ - implemented various intervew questions
+ - reddit dailyprogrammer challenges
